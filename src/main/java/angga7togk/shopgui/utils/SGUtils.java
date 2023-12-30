@@ -1,8 +1,10 @@
-package angga7togk.shopgui;
+package angga7togk.shopgui.utils;
 
 import cn.nukkit.item.Item;
 
 import java.util.HashMap;
+
+import angga7togk.shopgui.ShopGUI;
 
 public class SGUtils {
 

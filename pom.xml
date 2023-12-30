@@ -29,21 +29,26 @@
         <dependency>
             <groupId>com.github.IWareQ</groupId>
             <artifactId>FakeInventories</artifactId>
-            <version>1.1.2</version>
+            <version>1.1.5</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.angga7togk</groupId>
+            <artifactId>EconomyAPi-PNX</artifactId>
+            <version>1.0.0</version>
+	    </dependency>
         <dependency>
             <groupId>ru.nukkitx</groupId>
             <artifactId>formapi</artifactId>
             <version>2.2-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${base.path}serverlocal/PowerNukkitX/plugins/FormAPI.jar</systemPath>
+            <systemPath>${basedir}/libs/FormAPI.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>me.onebone</groupId>
-            <artifactId>EconomyAPI</artifactId>
+            <artifactId>economyapi</artifactId>
             <version>2.0.2</version>
             <scope>system</scope>
-            <systemPath>${base.path}serverlocal/PowerNukkitX/plugins/EconomyAPI.jar</systemPath>
+            <systemPath>${basedir}/libs/EconomyAPI.jar</systemPath>
         </dependency>
     </dependencies>
 </project>

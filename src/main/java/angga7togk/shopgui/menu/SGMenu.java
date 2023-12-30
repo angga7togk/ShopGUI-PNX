@@ -1,16 +1,18 @@
-package angga7togk.shopgui;
+package angga7togk.shopgui.menu;
 
 import cn.nukkit.Player;
 import cn.nukkit.inventory.Inventory;
 import cn.nukkit.inventory.InventoryType;
 import cn.nukkit.item.Item;
 import cn.nukkit.utils.TextFormat;
-import me.iwareq.fakeinventories.CustomInventory;
+import me.iwareq.fakeinventories.FakeInventory;
 import me.onebone.economyapi.EconomyAPI;
 import ru.nukkitx.forms.elements.CustomForm;
 import ru.nukkitx.forms.elements.SimpleForm;
 
 import java.util.*;
+
+import angga7togk.shopgui.ShopGUI;
 
 public class SGMenu {
 
@@ -20,7 +22,7 @@ public class SGMenu {
     }
 
     public void mainShop(Player player){
-        CustomInventory inv = new CustomInventory(InventoryType.DOUBLE_CHEST);
+        FakeInventory inv = new FakeInventory(InventoryType.DOUBLE_CHEST);
         inv.setTitle(TextFormat.BOLD + "SHOP");
         Map<String, String> itemEvent = new HashMap<>();
         for (String category : plugin.shop.getSection("category").getKeys(false)){
@@ -39,9 +41,9 @@ public class SGMenu {
     }
 
     public void categoryShop(Player player, String category, int page){
-        CustomInventory inv = new CustomInventory(InventoryType.DOUBLE_CHEST);
+        FakeInventory inv = new FakeInventory(InventoryType.DOUBLE_CHEST);
         inv.setTitle(TextFormat.BOLD + "SHOP | " + category);
-        double myMoney = EconomyAPI.getInstance().myMoney(player);
+        double myMoney = ShopGUI.getProvider().myMoney(player);
         Map<Integer, Map<String, Double>> pageMap = new HashMap<>();
 
         // Membuat Page Map :V
@@ -115,7 +117,7 @@ public class SGMenu {
             }
 
             Inventory inv = targetP.getInventory();
-            double myMoney = EconomyAPI.getInstance().myMoney(targetP);
+            double myMoney = ShopGUI.getProvider().myMoney(targetP);
             if (inv.isFull()) {
                 targetP.sendMessage(ShopGUI.prefix + "§cInventory is full!");
                 return;
@@ -143,7 +145,7 @@ public class SGMenu {
             }
             Inventory inv = targetP.getInventory();
             inv.addItem(item);
-            EconomyAPI.getInstance().reduceMoney(targetP, totalPrice);
+            ShopGUI.getProvider().reduceMoney(targetP, totalPrice);
             player.sendMessage(ShopGUI.prefix + "§aSuccessfully to buy " + item.getCount() + " " + item.getName());
         });
     }

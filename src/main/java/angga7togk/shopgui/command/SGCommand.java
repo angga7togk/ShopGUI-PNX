@@ -1,5 +1,8 @@
-package angga7togk.shopgui;
+package angga7togk.shopgui.command;
 
+import angga7togk.shopgui.ShopGUI;
+import angga7togk.shopgui.menu.SGMenu;
+import angga7togk.shopgui.utils.SGUtils;
 import cn.nukkit.Player;
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
