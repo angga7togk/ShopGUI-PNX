@@ -6,7 +6,6 @@ ShopGUI plugin for [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX),
 ### Installation
 1. Download the latest release from [ShopGUI](https://github.com/angga7togk/ShopGUI-PNX/releases).
 2. Download the depend plugin [Dependency](#dependency).
-3. Download the Economy plugin [Economy](#economy-depend-supported)
 3. Place the JAR file into the `plugins` folder of your Nukkit server.
 4. Start or reload your server.
 
