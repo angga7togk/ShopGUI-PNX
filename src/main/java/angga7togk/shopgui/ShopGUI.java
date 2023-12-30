@@ -6,19 +6,20 @@ import angga7togk.shopgui.provider.OneBone;
 import angga7togk.shopgui.provider.Provider;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.Config;
-import cn.nukkit.utils.TextFormat;
 
 public class ShopGUI extends PluginBase {
 
     public Config cfg;
     public Config shop;
-    public static final String prefix = TextFormat.GRAY + "[Shop] " +TextFormat.RESET;
+    public static String prefix;
 
     private static Provider provider;
     @Override
     public void onEnable() {
         saveDefaultConfig();
         
+        prefix = getConfig().getString("prefix");
+
         String pvd = getConfig().getString("provider", "angga7togk");
         if (pvd.equalsIgnoreCase("onebone")) {
             provider = new OneBone();

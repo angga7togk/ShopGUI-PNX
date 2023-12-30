@@ -1,12 +1,25 @@
-# ShopGUI-NK
-ShopGUI plugin for Nukkit, 
+# ShopGUI-PNX
+ShopGUI plugin for [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX), 
 
-# Depend
-FakeInventories https://cloudburstmc.org/resources/fakeinventories.837 <br>
-FormAPI https://github.com/ScarletRedMan/FormAPI <br>
-EconomyAPI https://cloudburstmc.org/resources/economyapi.14
+## Getting Started
 
-# Commands
+### Installation
+1. Download the latest release from [ShopGUI](https://github.com/angga7togk/ShopGUI-PNX/releases).
+2. Download the depend plugin [Dependency](#dependency).
+3. Download the Economy plugin [Economy](#economy-depend-supported)
+3. Place the JAR file into the `plugins` folder of your Nukkit server.
+4. Start or reload your server.
+
+### Dependency
+1. [FormAPI](https://github.com/ScarletRedMan/FormAPI).
+2. [FakeInventories v1.1.5](https://github.com/IWareQ/FakeInventories/releases/tag/v1.1.5).
+3. [Economy](#economy-depend-supported)
+
+### Economy Depend Supported
+1. EconomyAPI (Angga7Togk) [EconomyAPI](https://github.com/angga7togk/EconomyAPI-PNX)
+2. EconomyAPI (Onebone) [EconomyAPI](https://cloudburstmc.org/resources/economyapi.14)
+
+## Commands For Operator
 | Command                            | Description            | use |
 |------------------------------------|------------------------|-----|
 | `/shop`                            | open shop menu         | all |

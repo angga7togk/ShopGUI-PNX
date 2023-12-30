@@ -1,3 +1,7 @@
 # EconomyAPI: onebone
 # EconomyAPI: angga7togk
 provider: angga7togk
+
+
+# Prefix Message
+prefix: "§e[Shop] §r";

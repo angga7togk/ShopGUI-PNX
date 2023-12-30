@@ -6,13 +6,12 @@
 
     <groupId>angga7togk.shopgui</groupId>
     <artifactId>ShopGUI</artifactId>
-    <version>1.0</version>
+    <version>1.0.2</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <base.path>/home/angga7togk/Angga7Togk/</base.path>
     </properties>
     <repositories>
         <repository>

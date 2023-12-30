@@ -6,7 +6,6 @@ import cn.nukkit.inventory.InventoryType;
 import cn.nukkit.item.Item;
 import cn.nukkit.utils.TextFormat;
 import me.iwareq.fakeinventories.FakeInventory;
-import me.onebone.economyapi.EconomyAPI;
 import ru.nukkitx.forms.elements.CustomForm;
 import ru.nukkitx.forms.elements.SimpleForm;
 
